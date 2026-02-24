@@ -1,11 +1,21 @@
 package P2;
 
 public class mahasiswa23 {
+
     String nama;
     String nim;
     String kelas;
     double ipk;
+public mahasiswa23(){
 
+}
+
+public mahasiswa23(String nm,String nim,double ipk,String kls){
+    nama=nm;
+    this.nim=nim;
+    this.ipk=ipk;
+    kelas=kls;
+}  
     void tampilkanInformasi(){
         System.out.println("Nama: "+nama);
         System.out.println("Nim: "+nim);
