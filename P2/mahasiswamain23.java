@@ -17,6 +17,8 @@ public class mahasiswamain23 {
         mhs2.updateIpk(3.30);
         mhs2.tampilkanInformasi();
 
-    
+        mahasiswa23 mhs = new mahasiswa23("Rafi Priya", "254107020120", 3.95, "TI-1E");
+        mhs.tampilkanInformasi();
+        System.out.println("Kinerja: " + mhs.nilaiKinerja());
     }
 }
