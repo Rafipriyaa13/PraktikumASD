@@ -6,6 +6,17 @@ public class Faktorial {
         }
         return fakto;
     }
+    
+    int faktorialBF_while(int n) {
+        int fakto = 1;
+        int i = 1;
+        while (i <= n) {
+            fakto = fakto * i;
+            i++;
+        }
+        return fakto; 
+
+    }
 
     int faktorialDC(int n) {
         if (n == 1) {
