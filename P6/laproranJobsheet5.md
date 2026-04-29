@@ -33,20 +33,29 @@ kode di atas?
 
 ![alt text](images/image6.png)
 ### Pertanyaan Percobaan 6.3
-1.Tunjukkan pada kode program yang mana proses divide dijalankan!  
+1. Tunjukkan pada kode program yang mana proses divide dijalankan!
 2. Tunjukkan pada kode program yang mana proses conquer dijalankan!  
 3. Apa fungsi left, right, dan mid?  
 4. Jika data IPK yang dimasukkan tidak urut. Apakah program masih dapat berjalan Mengapa demikian?
+5. Jika IPK yang dimasukkan dari IPK terbesar ke terkecil (misal: 3.8, 3.7, 3.5, 3.4, 3.2) dan elemen
+yang dicari adalah 3.2. Bagaimana hasil dari binary search? Apakah sesuai? Jika tidak sesuai maka
+ubahlah kode program binary seach agar hasilnya sesuai  
+6. Jelaskan bagaimana binary search menentukan bahwa data yang dicari tidak ditemukan di dalam
+array
+7. Modifikasi program di atas yang mana jumlah mahasiswa yang diinputkan sesuai dengan masukan
+dari keyboard.
 
-### Jawaban Percobaan 2.2
-1. -Instansiasi Object
-   <img  alt="Screenshot 2025-10-10 105047" src="images\Screenshot 2026-02-20 145936.png" />  
-   -Pemberian Nilai Atribut
-      <img  alt="Screenshot 2025-10-10 105047" src="images\image.png" />  
-   -Pemanggilan Method
-         <img  alt="Screenshot 2025-10-10 105047" src="images\Screenshot 2026-02-20 150553.png" />  
-2. Menggunakan dot operator (.) yaitu titik setelah nama object.  
-3. Karena di antara pemanggilan pertama dan kedua, terdapat perubahan nilai atribut melalui pemanggilan method ubahKelas() dan updateIpk().  
+### Jawaban Percobaan 6.3
+1. ![alt text](images/image7.png)    
+
+2. ![alt text](images/image8.png)
+3. - left: Menyimpan letak indeks batas awal/kiri dari rentang pencarian pada array.
+   - right: Menyimpan letak indeks batas akhir/kanan dari rentang pencarian pada array
+   - mid: Menyimpan letak indeks tengah di antara left dan right yang menjadi titik pembagi array, sekaligus lokasi acuan pertama untuk mengecek apakah data sesuai dengan yang dicari.
+4. Program masih bisa dikompilasi dan berjalan tanpa error sistem, tetapi hasil pencariannya (output) akan salah atau tidak valid. Konsep Binary Search mewajibkan datanya terurut agar logika perbandingan nilai (< atau >) saat menentukan akan bergeser ke sisi kiri atau sisi kanan bisa bekerja dengan benar. Jika data acak, program bisa saja berbelok ke rentang array yang tidak berisi data yang dituju.
+5. Hasilnya tidak sesuai karena struktur kode pada jobsheet didesain khusus untuk urutan naik/ascending (mengecek jika indeks tengah lebih besar dari pencarian, maka pindah ke kiri).
+6. Data ditentukan tidak ada apabila perulangan pengecekan rentang sudah habis bergeser, yang ditandai dengan nilai left sudah melebihi nilai right (rentang batas saling tumpang tindih).
+
 
 
 ## Percobaan 3: Membuat Konstruktor
