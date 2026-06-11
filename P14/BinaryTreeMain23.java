@@ -26,8 +26,8 @@ public class BinaryTreeMain23 {
         BinaryTree23 bst = new BinaryTree23();
         bst.add(new Mahasiswa23("244160121","Ali","A",3.57));
         bst.add(new Mahasiswa23("244160221","Badar","B",3.85));
-        bst.add(new Mahasiswa23("244160121","Candra","C",3.21));
-        bst.add(new Mahasiswa23("244160121","Dewi","B",3.54));
+        bst.add(new Mahasiswa23("244160185","Candra","C",3.21));
+        bst.add(new Mahasiswa23("244160220","Dewi","B",3.54));
 
         System.out.println("\nDaftar Semua Mahasiswa (in order traversal): ");
         bst.traverseInOrder((bst.root));
